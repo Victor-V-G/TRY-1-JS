@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS EXPLICADO</title>
+    <link rel="stylesheet" href="assets/css/grid.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <script src="assets/js/formScript.js"></script>
+</head>
+<body class="grid-container">
+    <header class="header">header</header>
+    <main class="main">main
+        <div class="main-div">
+            FORMULARIO
+            <form>
+                <input type="text" name="nombre" id="nombre" placeholder="ingrese su nombre">
+                <br>
+                <p id="errorNombre"></p>
+                <input type="text" name="apellido" id="apellido" placeholder="ingrese su apellido">
+                <br>
+                <p id="errorApellido"></p>
+                <input type="text" name="correo" id="correo" placeholder="ingrese su correo">
+                <br>
+                <p id="errorCorreo"></p>
+                <input type="number" name="edad" id="edad" placeholder="ingrese su edad">
+                <br>
+                <p id="errorEdad"></p>
+                <button type="button" onclick="validar()">Registrar</button>
+            </form>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Apellido</th>
+                        <th>Correo</th>
+                        <th>Edad</th>
+                        <th>Accion</th>
+                    </tr>
+                </thead>
+                <tbody id="tablaDatosPersonas"></tbody>
+            </table>
+
+            <form>
+                <input type="text" id="nombre1" placeholder="ingrese su nombre">
+                <br>
+                <input type="text" id="apellido1" placeholder="ingrese su apellido">
+                <br>
+                <input type="text" id="correo1" placeholder="ingrese su correo">
+                <br>
+                <input type="number" id="edad1" placeholder="ingrese su edad">
+                <br>
+                <button type="button" onclick="actualizar()" id="btnActualizar">Actualizar</button>
+            </form>
+            
+        </div>
+    </main>
+    <footer class="footer">footer</footer>
+</body>
+</html>
