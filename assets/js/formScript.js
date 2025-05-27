@@ -40,7 +40,7 @@ function validar(){
     }
 
 }
-
+//vagina
 function validarLargoMinimo(elemento,valorIngresado,elementoError){
     if(valorIngresado.length==0){
         alert("debes ingresar algo")
